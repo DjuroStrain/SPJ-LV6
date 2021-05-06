@@ -1,0 +1,11 @@
+<ul>
+    <li ng-repeat="proizvod in oProizvodi">Naziv: {{proizvod.name}}<br>Cijena: {{proizvod.price}}<br>Dostupna količina: {{proizvod.quantity}}<button type="button" ng-click="Dodaj(this)">Dodaj</button></li>
+</ul>
+<br><br>
+<h3>Košarica</h3>
+<ul>    
+    <li ng-repeat="proizvod in Kosarica">Naziv: {{proizvod.s_name}}<br>Cijena: {{proizvod.s_price}}<br> Željena količina: 
+    <input type="number" ng-model="proizvod.s_quantity" placeholder="Unesite količinu" max="{{proizvod.first_quantity}}" ng-change="DohvatiCijenu()"></li>
+</ul>
+<h2>Ukupna cijena: {{ukupno}}</h2>
+   

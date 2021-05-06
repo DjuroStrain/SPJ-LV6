@@ -1,0 +1,5 @@
+<input type="text" ng-model="task" placeholder="Unesite zadatak">
+<button type="button" ng-click="addTask()">Unesi</button>
+<ul>
+    <li ng-repeat="zadatak in oZadaci">{{zadatak.name}}<button type="button" ng-click="Delete(this)">Obriši</button></li>
+</ul>
